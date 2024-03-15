@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css"
+      rel="stylesheet"
+    />
+    <title>Combine HTML with CSS</title>
+  </head>
+
+  <body class="bg-rose-300">
+    <div class="container width-screen height-screen mt-2" id="temp_name">
+      <div class="flex flex-row justify-around">
+        <div class="flex flex-col">
+          <label class="block mb-2 text-sm" for="small_size"
+            >Upload HTML file</label
+          >
+          <input
+            class="block fileInput w-5/5 mb-5 text-xs text-gray-900 border border-gray-300 rounded-lg cursor-pointer bg-gray-50 focus:outline-none"
+            type="file"
+            id="htmlFileInput"
+            accept=".html"
+          />
+        </div>
+
+        <div class="flex flex-col">
+          <label class="block mb-2 text-sm" for="small_size"
+            >Upload CSS file</label
+          >
+          <input
+            class="block fileInput w-5/5 mb-5 text-xs text-gray-900 border border-gray-300 rounded-lg cursor-pointer bg-gray-50 focus:outline-none"
+            type="file"
+            id="cssFileInput"
+            accept=".css"
+          />
+        </div>
+
+        <div class="flex flex-row h-10 mt-8 justify-around">
+          <button
+            id="combineButton"
+            type="button"
+            class="text-white mx-5 bg-gradient-to-r from-purple-500 via-purple-600 to-purple-700 hover:bg-gradient-to-br focus:ring-2 focus:outline-none focus:ring-purple-300 rounded-lg text-xs px-2 py-1.5 text-center mb-2"
+          >
+            Run the Tests
+          </button>
+
+          <button
+            id=""
+            type="button"
+            class="text-white ml-4 bg-gradient-to-r from-teal-400 via-teal-500 to-teal-600 hover:bg-gradient-to-br focus:ring-2 focus:outline-none focus:ring-teal-300 rounded-lg text-xs px-2 py-1.5 text-center mb-2"
+            onclick="location.reload()"
+          >
+            Reset
+          </button>
+        </div>
+      </div>
+
+      <div class="mb-5">
+        <label
+          for="message"
+          class="block mb-2 text-1xl text-center font-medium text-gray-900"
+          >Inlcude Below Fields</label
+        >
+        <textarea
+          id="message"
+          rows="10"
+          class="block p-2.5 w-full text-md text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500"
+          placeholder="Include Fields"
+        ></textarea>
+      </div>
+    </div>
+
+    <div id="hiddenContent"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
