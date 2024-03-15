@@ -14,45 +14,45 @@ The Project Validator is a JavaScript tool designed to analyze HTML and CSS file
 - The tool checks for the presence of various elements and styles based on predefined criteria using DOM manipulation.
 - Errors and warnings are displayed in a textarea, indicating areas where the project may not meet the requirements.
 
-**## Requirements Checked**
+## Requirements Checked
 
-**### Welcome Section:**
+### Welcome Section:
 
 - Ensures that the project contains a welcome section with an id of "**welcome-section**".
 - Verifies the presence of an `<h1>` element within the welcome section.
 
-**### Projects Section:**
+### Projects Section:
 
 - Confirms the existence of a projects section with an id of "**projects**".
 - Checks for the presence of project tiles and project links within the projects section.
 
-**### Navbar:**
+### Navbar:
 
 - Validates the presence of a navbar with an id of "**navbar**".
 - Ensures that the navbar contains valid navigation links.
 
-**### Profile Link:**
+### Profile Link:
 
 - Verifies the presence of a valid profile link, such as links to GitHub or FreeCodeCamp.
 - Checks if the profile link is configured to open in a new tab.
 
-**### Media Queries:**
+### Media Queries:
 
 - Checks if the project includes any media queries in the CSS.
 
-**### Viewport Height:**
+### Viewport Height:
 
 - Ensures that the height of the welcome section is equal to the height of the viewport.
 
-**### Navbar Position:**
+### Navbar Position:
 
 - Verifies that the navbar remains fixed at the top of the viewport when scrolling.
 
-**## Output**
+## Output
 
 The results of the analysis are displayed in a textarea, indicating any errors or warnings found during the evaluation process. If no issues are detected, a message indicating the absence of errors is shown.
 
-**## Notes**
+## Notes
 
 - Ensure that both HTML and CSS files are selected before clicking the "**Run Tests**" button.
 - If any errors occur during the analysis, an alert will be displayed, and the process will be halted.
