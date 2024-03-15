@@ -1,15 +1,15 @@
-**# Project Validator**
+# Project Validator
 
 The Project Validator is a JavaScript tool designed to analyze HTML and CSS files to ensure that certain requirements are met. It scans the provided HTML and CSS files, combines them, and then checks for specific elements and styles according to predefined criteria using DOM manipulation.
 
-**## How to Use**
+## How to Use
 
-**### Running Tests:**
+### Running Tests:
 
 1. Click the "**Run Tests**" button after selecting HTML and CSS files.
 2. The tool will then combine the HTML content with the inline CSS styles.
 
-**### Requirements Analysis:**
+### Requirements Analysis:
 
 - The tool checks for the presence of various elements and styles based on predefined criteria using DOM manipulation.
 - Errors and warnings are displayed in a textarea, indicating areas where the project may not meet the requirements.
